@@ -1,0 +1,9 @@
+---
+layout: sub_research
+title: Older Adults and Technology
+permalink: /research/older-adults-and-technology/
+research_category: Aging & Technology
+---
+_In the developed world populations are ageing. Many older adults struggle to maintain their independence and spend increasing amounts of time living with disability and poor health. However, a significant minority of older adults are ageing successfully and engage with the digital age with increasing numbers using mobile phones and the internet. PaCT are involved in developing interventions that increase independence. But we also recognise that current technologies are not always easily accessible to the older user. PaCT have substantial expertise in identifying technological requirements and usability testing with this group._
+
+PaCT have a well established, active research team that specialises in ageing research. We are based in a psychology department but have excellent interdisciplinary links. Previous projects include a 30-year longitudinal study: North East Age Research examining cognitive ageing. We recently completed a New Dynamics of Ageing project (a joint initiative by Research Council’s UK RCUK), which examined the relationship between successful ageing and mobility patterns in the oldest-old (over 75 years). We used a combination of GPS, accelerometry and diaries to map mobility and examine participant’s interactions with GPS technology. In addition we have conducted a number of discussion groups examining older adults responses to current technologies such as mobile phones, iPads and the potential of games consoles to increase levels of physical activity.

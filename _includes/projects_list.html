@@ -1,0 +1,43 @@
+{% for project in current_projects %}
+  {% assign remainder2 = forloop.index | modulo: 2 %}
+  {% assign remainder3 = forloop.index | modulo: 3 %}
+  {% assign categories = project.categories | 
+    where_exp: "category", "category != 'Current' and category != 'Past'" %}
+  
+
+  <div
+    class="portfolio-entry portfolio-entry-column-3 type-current {% if remainder2 == 1 %}portfolio-entry-mobile-first-item-row{% else %}portfolio-entry-mobile-last-item-row{% endif %} {% if remainder3 == 1 %}portfolio-entry-first-item-row{% elsif remainder3 == 0 %}portfolio-entry-last-item-row{% endif %}">
+    <header class="portfolio-entry-header">
+      {% if project.thumbnail != nil and project.thumbnail != "" %}<a class="portfolio-featured-image" href="{{ project.url }}"><img width="560"
+        height="300"
+        src="{{ project.thumbnail }}"
+        class="attachment-large size-large wp-post-image" alt="" /></a>{% endif %}
+      <h2 class="portfolio-entry-title"><a href="{{ project.url }}"
+            title="cSALSA">{{ project.title }}</a></h2>
+
+      <div class="portfolio-entry-meta">
+        <div class="project-types"><span>Types:</span> <a href="../project-type/current/index.html"
+            rel="tag">{% if project.category contains 'Past' %}Past{% else %}Current{% endif %}</a></div>
+        {% if categories.size > 0 %}<div class="project-tags"><span>Tags:</span> 
+          {% for category in categories %}
+            <a
+            href="/research/{{ category | slugify }}/" rel="tag">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        {% endif %}
+      </div>
+    </header>
+    <div class="portfolio-entry-content">
+      {% capture content_words %}
+        {{ project.content | number_of_words }}
+      {% endcapture %}
+
+      {% capture excerpt_words %}
+        {{ project.content | truncatewords: 55 | number_of_words }}
+      {% endcapture %}
+
+      <p>{{ project.content | strip_html | truncatewords: 55 }}{% if content_words != excerpt_words  %} <a href="{{ project.url }}"
+        class="more-link">Continue reading<span class="screen-reader-text">
+          &#8220;{{ project.title }}&#8221;</span></a>{% endif %}</p>
+    </div>
+  </div>
+{% endfor %}

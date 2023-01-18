@@ -1,0 +1,11 @@
+---
+layout: sub_research
+title: Cyber Security
+permalink: /research/cyber-security/
+research_category: Cybersecurity
+---
+_The rapid growth of technology and the internet has many benefits and opportunities for individuals and businesses alike. However, we are becoming increasingly dependent upon cyber space and this has brought new risks to our personal information, identity, personal assets and systems. Improving cyber security is undoubtedly important and one area of particular focus is the “human element”. The human element is often cited as the weakest link in security, whether malicious or not, users compromise security and are susceptible to social engineering attacks. In line with the UK Cyber Security Strategy, we seek to transform the cyber-landscape so that our citizens, businesses and critical infrastructures are protected from cyber attacks._
+
+PaCT Lab has been instrumental in the understanding of the human side of technology and Cyber Security with major grants from government and industry. One area of our previous work has focused upon is exploring trust in technology, brands, information and people. This includes NIHR (National Institute for Health Research) funded work on trust and health information, JISC (Joint Information Systems Committee)  funded work on trust and learners, MOD (Ministry of Defence) funded work on trust on the Internet and industry funded work on barriers and promotion of security behaviour when completing financial transactions. Furthermore, we seek to understand individuals perceptions of privacy threats, their awareness and willingness to disclose information in different contexts.
+
+Our previous research has also investigated security and privacy issues in the workplace, in particular  employee and employer awareness of these issues. Additionally, we also explore issues of global identity management, usable security and accessibility for different groups (e.g. older adults). Overriding all of our research is the notion of behaviour change (e.g. how can we change end-user behaviour to promote more secure practice).

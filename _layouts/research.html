@@ -1,0 +1,25 @@
+---
+layout: default
+content_type: article
+---
+{{ content }}
+
+<h1>Current Projects</h1>
+<div class="jetpack-portfolio-shortcode column-3">
+  {% assign current_projects = site.research_projects | 
+    where_exp: "project", "project.category contains 'Current'" %}
+  
+  {% include projects_list.html %}
+  
+</div>
+<h1>Past Projects</h1>
+<div class="jetpack-portfolio-shortcode column-3">
+  {% assign current_projects = site.research_projects | 
+    where_exp: "project", "project.category contains 'Past'" %}
+  
+  {% include projects_list.html %}
+  
+</div>
+<link rel='stylesheet' id='jetpack-portfolio-style-css'
+href='/exported-wp-dirs/wp-content/plugins/jetpack/modules/custom-post-types/css/portfolio-shortcodef8b0.css?ver=20140326'
+type='text/css' media='all' />

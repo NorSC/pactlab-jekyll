@@ -1,0 +1,63 @@
+<header id="masthead" class="site-header" role="banner">
+  <div class="site-header-main">
+    <div class="site-branding">
+      <a href="/" class="custom-logo-link" rel="home" itemprop="url"><img width="240" height="153"
+          src="/img/cropped-pactlogotransparent-1.png"
+          class="custom-logo" alt="PaCT Lab" itemprop="logo" data-attachment-id="538"
+          data-permalink="https://pactlab.co.uk/img/cropped-pactlogotransparent-1.png"
+          data-orig-file="/img/cropped-pactlogotransparent-1.png"
+          data-orig-size="240,153" data-comments-opened="0"
+          data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
+          data-image-title="cropped-pactlogotransparent-1.png" data-image-description="&lt;p&gt;https://pactlab.co.uk/img/cropped-pactlogotransparent-1.png&lt;/p&gt;" data-medium-file="https://pactlab.co.uk/img/cropped-pactlogotransparent-1.png"
+          data-large-file="https://pactlab.co.uk/img/cropped-pactlogotransparent-1.png" /></a>
+      <p class="site-title"><a href="index.html" rel="home">PaCT Lab</a></p>
+    </div>
+    <!-- .site-branding -->
+
+    <button id="menu-toggle" class="menu-toggle">Menu</button>
+
+    <div id="site-header-menu" class="site-header-menu">
+      <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+        <div class="menu-menu-1-container">
+          <ul id="menu-menu-1" class="primary-menu">
+            {% for item in site.data.main_menu %}
+            <li class="menu-item menu-item-type-post_type menu-item-object-page {% if item.children %}menu-item-has-children{% endif %} {% if item.url == page.url %}current-menu-item{% elsif item.children %}{% for childitem in item.children %}{% if childitem.url == page.url %}current-menu-item{% break %}{% endif %}{% endfor %}{% endif %}">
+              <a href="{{ item.url }}">{{ item.name }}</a>
+              {% if item.children %}
+                <ul class="sub-menu">
+                  {% for childitem in item.children %}
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page {% if childitem.url == page.url %}current-menu-item{% endif %}">
+                      <a href="{{ childitem.url }}">{{ childitem.name }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+      </nav>
+      <!-- .main-navigation -->
+
+      <!-- <nav id="social-navigation" class="social-navigation" role="navigation" aria-label="Social Links Menu">
+        <div class="menu-menu-1-container">
+          <ul id="menu-menu-2" class="social-links-menu">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a
+                href="front-page/index.html"><span class="screen-reader-text">Home</span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-726"><a
+                href="blog/index.html"><span class="screen-reader-text">Blog</span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-116">
+              <a href="research/index.html"><span class="screen-reader-text">Research</span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114"><a
+                href="people/index.html"><span class="screen-reader-text">People</span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"><a
+                href="publications/index.html"><span class="screen-reader-text">Publications</span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a
+                href="contact-us/index.html"><span class="screen-reader-text">Contact Us</span></a></li>
+          </ul>
+        </div>
+      </nav> --><!-- .social-navigation -->
+    </div><!-- .site-header-menu -->
+  </div><!-- .site-header-main -->
+
+</header><!-- .site-header -->

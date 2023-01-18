@@ -1,0 +1,48 @@
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <nav class="main-navigation" role="navigation" aria-label="Footer Primary Menu">
+    <div class="menu-menu-1-container">
+      <ul id="menu-menu-3" class="primary-menu">
+        {% for item in site.data.main_menu %}
+          <li class="menu-item menu-item-type-post_type menu-item-object-page {% if item.children %}menu-item-has-children{% endif %} {% if item.url == page.url %}current-menu-item{% endif %}">
+            <a href="{{ item.url }}">{{ item.name }}</a>
+            {% if item.children %}
+              <ul class="sub-menu">
+                {% for childitem in item.children %}
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a href="{{ childitem.url }}">{{ childitem.name }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav><!-- .main-navigation -->
+
+  <!-- <nav class="social-navigation" role="navigation" aria-label="Footer Social Links Menu">
+    <div class="menu-menu-1-container">
+      <ul id="menu-menu-4" class="social-links-menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a
+            href="front-page/index.html"><span class="screen-reader-text">Home</span></a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-726"><a
+            href="blog/index.html"><span class="screen-reader-text">Blog</span></a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-116">
+          <a href="research/index.html"><span class="screen-reader-text">Research</span></a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114"><a
+            href="people/index.html"><span class="screen-reader-text">People</span></a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"><a
+            href="publications/index.html"><span class="screen-reader-text">Publications</span></a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a
+            href="contact-us/index.html"><span class="screen-reader-text">Contact Us</span></a></li>
+      </ul>
+    </div>
+  </nav> --><!-- .social-navigation -->
+
+
+  <div class="site-info">
+    <span class="site-title"><a href="/" rel="home">PaCT Lab</a></span>
+    <span class="imprint">
+     {{ site.time | date: '%Y' }} </span>
+  </div><!-- .site-info -->
+</footer><!-- .site-footer -->

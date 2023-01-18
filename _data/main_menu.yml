@@ -1,0 +1,26 @@
+- name: Home
+  url: /
+
+- name: Blog
+  url: /blog/
+
+- name: Research
+  url: /research/
+  children:
+    - name: Cyber Security
+      url: /research/cyber-security/
+    - name: Aging and Technology
+      url: /research/older-adults-and-technology/
+    - name: Social Media
+      url: /research/social-media/
+    - name: E-Health
+      url: /research/e-health/
+
+- name: People
+  url: /people/
+
+- name: Publications
+  url: /publications/
+
+- name: Contact Us
+  url: /contact-us/
