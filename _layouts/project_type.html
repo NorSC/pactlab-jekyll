@@ -1,0 +1,29 @@
+---
+layout: default
+content_type: website
+h1_class: "page-title"
+article_area: none
+---
+
+{{ content }}
+
+{% if paginator.page_trail and paginator.total_pages > 1%}
+  <nav class="navigation pagination" role="navigation">
+    <h2 class="screen-reader-text">Posts navigation</h2>
+    <div class="nav-links">
+      {% if paginator.page > 1 %}
+        <a class="prev page-numbers" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Prev page</a></div>
+      {% endif %}
+      {% for trail in paginator.page_trail %}
+        {% if paginator.page == trail.num %}
+          <span aria-current="page" class="page-numbers current"><span class="meta-nav screen-reader-text">Page </span>{{ trail.num }}</span>
+        {% else %}
+          <a class="page-numbers" href="{{ trail.path | prepend: site.baseurl }}"><span class="meta-nav screen-reader-text">Page </span>{{ trail.num }}</a>
+        {% endif %}
+      {% endfor %}
+      {% if paginator.page < paginator.total_pages %}
+      <a class="next page-numbers" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next page</a>
+    {% endif %}
+    </div>
+  </nav>
+{% endif %}

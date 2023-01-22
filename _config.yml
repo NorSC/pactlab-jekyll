@@ -30,6 +30,7 @@ permalink: pretty
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
 
 collections:
   research_projects:
@@ -47,6 +48,19 @@ defaults:
       type: 'research_projects'
     values:
       layout: 'portfolio_item'
+
+pagination:
+  enabled: true
+  debug: true
+  collection: 'research_projects'
+  sort_field: 'post_date_gmt'
+  sort_reverse: true
+  title: ':title'
+  trail:
+    before: 2 # The number of links before the current page
+    after: 2  # The number of links after the current page
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

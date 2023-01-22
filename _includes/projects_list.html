@@ -16,7 +16,7 @@
             title="cSALSA">{{ project.title }}</a></h2>
 
       <div class="portfolio-entry-meta">
-        <div class="project-types"><span>Types:</span> <a href="../project-type/current/index.html"
+        <div class="project-types"><span>Types:</span> <a href="/project-type/{% if project.category contains 'Past' %}past{% else %}current{% endif %}/"
             rel="tag">{% if project.category contains 'Past' %}Past{% else %}Current{% endif %}</a></div>
         {% if categories.size > 0 %}<div class="project-tags"><span>Tags:</span> 
           {% for category in categories %}

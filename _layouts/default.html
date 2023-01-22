@@ -175,14 +175,31 @@
 			  <div id="content" class="site-content">
           <div id="primary" class="content-area">
 					  <main id="main" class="site-main" role="main">
-						  <article class="page {% unless layout.article_area == 'narrow'%}type-page{% endunless %} status-publish hentry">
-							  <header class="entry-header">
-								  <h1 class="entry-title">{{ page.title }}</h1>
+						  {% if layout.article_area == 'none' %}
+                <header class="page-header">
+                  <h1 class="{% if layout.h1_class == 'page-title'%}page-title{% else %}entry-title{% endif %}">{{ page.title }}</h1>
+                  {% if page.description != nil and page.description != "" %}
+                    <div class="taxonomy-description">
+                      <p>{{ page.description }}</p>
+                    </div>
+                  {% endif %}
                 </header>
-                <div class="entry-content">
-                  {{ content }}
-                </div>
-              </article>
+                {{ content }}
+              {% else %}
+                <article class="page {% unless layout.article_area == 'narrow'%}type-page{% endunless %} status-publish hentry">
+                  <header class="entry-header">
+                    <h1 class="{% if layout.h1_class == 'page-title'%}page-title{% else %}entry-title{% endif %}">{{ page.title }}</h1>
+                    {% if page.description != nil and page.description != "" %}
+                      <div class="taxonomy-description">
+                        <p>{{ page.description }}</p>
+                      </div>
+                    {% endif %}
+                  </header>
+                  <div class="entry-content">
+                    {{ content }}
+                  </div>
+                </article>
+              {% endif %}
             </main>
             <aside id="content-bottom-widgets" class="content-bottom-widgets" role="complementary">
               <div class="widget-area">

@@ -1,0 +1,16 @@
+<article class="jetpack-portfolio type-jetpack-portfolio status-publish hentry">
+  <header class="entry-header">
+    <h2 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  </header>
+  <div class="entry-content">
+    {% if post.thumbnail != nil and post.thumbnail != "" %}
+      <a class="post-thumbnail" href="{{ post.url }}" aria-hidden="true" style="text-decoration: none; box-shadow: none;">
+        <img width="560" height="300"
+          src="{{ post.thumbnail }}"
+          class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+        />
+      </a><!-- .post-thumbnail -->
+    {% endif %}
+    {{ post.content }}
+  </div>
+</article>
