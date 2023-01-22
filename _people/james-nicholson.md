@@ -1,0 +1,7 @@
+---
+name: James Nicholson
+category: academic
+order: 10
+---
+James is a Lecturer in the School of Computer and Information Sciences. James is interested in inclusive cybersecurity and leads the CyberGuardians research project. He is also interested in usable security, social engineering, and everyday surveillance. Previously, James was a senior researcher in PaCT Lab working on the Cybersecurity Across the Lifespan (cSALSA) project. The project explores how cyber-security is understood, and the attitudes and behaviours of people to cyber-security and risk. During his time in PaCT Lab, James also worked on Choice Architecture for Information Security (ChAISe), Digital Economy Research Centre (DERC), and the Horizon 2020 project CYBECO. Prior to PaCT Lab, James worked at Open Lab, Newcastle University on the TEDDI and SiDE projects. James’ work has focused on improving user authentication, both by repurposing existing graphical authentication systems and by evaluating novel ones. He is also interested in user privacy and how groups of users (children, parents, older adults) experience location tracking technologies, as well as how CCTV video can be crowdsourced to de-centralise the surveillance landscape. More recently, he has developed tools and methodologies for uncovering and understanding employees’ mental models of security threats with the aim of improving training programmes and/or organisational policies, as well as practical means for improving users’ protection against these security threats (e.g. phishing).
+

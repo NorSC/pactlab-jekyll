@@ -1,0 +1,5 @@
+---
+name: Dawn Branley-Bell
+category: research
+---
+Dawn is a chartered Psychologist specialising in cyberpsychology. She is an elected member of the British Psychological Society (BPS) Cyberpsychology Section, and editorial member for the Cyberpsychology Bulletin. Dawn’s research interests include online communication around extreme behaviours (e.g., self-harm, eating disorders, suicidal ideation), behaviour change, cybersecurity, and the application of ‘technology for good’. Dawn was previously awarded an RCUK International Fellowship at the Library of Congress (LoC), Washington D.C as the first external researcher to access the LoC’s Twitter archive. She collaborates on a wide range of multidisciplinary, international projects, and has managed major projects funded by the US Military of Defence (STEPPS), EU Horizon 2020 (CYBECO & PANACEA Research) and Yorkshire Cancer Research. Dawn is a mixed-methods researcher, and holds a Behaviour Change Techniques Taxonomy Certificate for coding competence of complex behaviour change interventions from University College London (UCL).

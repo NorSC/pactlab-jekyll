@@ -1,0 +1,7 @@
+---
+name: Pam Briggs
+order: 30
+category: academic
+thumbnail: /uploads/pam_briggs.jpeg
+---
+I hold a Chair in Applied Psychology at Northumbria University and am a Visiting Professor at Newcastle University. My work primarily addresses issues of identity, trust and security in new social media, seeking answers to three main questions: Why and when do we feel secure in disclosing sensitive identity information about ourselves? What makes us trust an electronic message? How and when do we seek to protect our privacy? In the last five years, I’ve secured over £2m in research funding, have published over forty articles on human perceptions of trust, privacy and security in computer-mediated communication and have developed, with colleagues, a new model of health advice-seeking online. I’m one of the founder members of the UK's Research Institute in the Science of Cybersecurity, funded by GCHQ in association with RCUK's Global Uncertainty Programme and my most recent research awards address both usable and inclusive privacy and security. My latest projects (see projects page) concern cybersecurity across the lifespan (cSALSA), the human side of cyber and cloud crime (CRITICAL) and attitudes and decision-making behaviours around cyberinsurance (CYBECO). I’m also a co-investigator on the Digital Economy Research Centre (DERC) where I’ve been exploring ways to democratise context-relevant data collection and analysis and explore the design of digital platforms for social action.

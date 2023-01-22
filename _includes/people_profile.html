@@ -1,0 +1,6 @@
+<div class="author-block">
+	<img alt="" src="{% if person.thumbnail %}{{ person.thumbnail }}{% else %}/uploads/default_user.png{% endif %}" class="avatar avatar-90 photo" height="90" width="90">
+	<h2>{{ person.name }}</h2>
+
+	{{ person.content }}
+</div>

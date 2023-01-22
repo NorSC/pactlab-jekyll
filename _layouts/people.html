@@ -1,0 +1,66 @@
+---
+layout: default
+content_type: article
+---
+{{ content }}
+
+<h1>Academic Staff</h1>
+<div class="user-list-wrap">
+  {% assign academic_staff_priority = site.people | 
+    where_exp: "person", "person.category contains 'academic'" | where_exp: "person", "person.order != 9999" | sort: "order" %}
+  {% assign academic_staff = site.people | 
+    where_exp: "person", "person.category contains 'academic'" | where_exp: "person", "person.order == 9999" | sort: "name" %}
+  
+  {% for person in academic_staff_priority %}
+    {% include people_profile.html %}
+  {% endfor %}
+  {% for person in academic_staff %}
+    {% include people_profile.html %}
+  {% endfor %}
+</div>
+
+<h1>Research Staff</h1>
+<div class="user-list-wrap">
+  {% assign research_staff_priority = site.people | 
+    where_exp: "person", "person.category contains 'research'" | where_exp: "person", "person.order != 9999" | sort: "order" %}
+  {% assign research_staff = site.people | 
+    where_exp: "person", "person.category contains 'research'" | where_exp: "person", "person.order == 9999" | sort: "name" %}
+  
+  {% for person in research_staff_priority %}
+    {% include people_profile.html %}
+  {% endfor %}
+  {% for person in research_staff %}
+    {% include people_profile.html %}
+  {% endfor %}
+</div>
+
+<h1>PhD Students</h1>
+<div class="user-list-wrap">
+  {% assign phd_students_priority = site.people | 
+    where_exp: "person", "person.category contains 'phd'" | where_exp: "person", "person.order != 9999" | sort: "order" %}
+  {% assign phd_students = site.people | 
+    where_exp: "person", "person.category contains 'phd'" | where_exp: "person", "person.order == 9999" | sort: "name" %}
+  
+  {% for person in phd_students_priority %}
+    {% include people_profile.html %}
+  {% endfor %}
+  {% for person in phd_students %}
+    {% include people_profile.html %}
+  {% endfor %}
+</div>
+
+<h1>Alumni</h1>
+<div class="user-list-wrap">
+  {% assign alumni_priority = site.people | 
+    where_exp: "person", "person.category contains 'alumni'" | where_exp: "person", "person.order != 9999" | sort: "order" %}
+  {% assign alumni = site.people | 
+    where_exp: "person", "person.category contains 'alumni'" | where_exp: "person", "person.order == 9999" | sort: "name" %}
+  
+  {% for person in alumni_priority %}
+    {% include people_profile.html %}
+  {% endfor %}
+  {% for person in alumni %}
+    {% include people_profile.html %}
+  {% endfor %}
+</div>
+

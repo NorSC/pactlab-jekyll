@@ -37,6 +37,8 @@ collections:
     output: true
     permalink: /portfolio/:name
     layout: portfolio_item
+  people:
+    output: false
 
 defaults:
   - scope:
@@ -48,10 +50,14 @@ defaults:
       type: 'research_projects'
     values:
       layout: 'portfolio_item'
+  - scope:
+      path: ''
+      type: 'people'
+    values:
+      order: 9999
 
 pagination:
   enabled: true
-  debug: true
   collection: 'research_projects'
   sort_field: 'post_date_gmt'
   sort_reverse: true
